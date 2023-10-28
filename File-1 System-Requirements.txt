@@ -1,0 +1,20 @@
+System Requirements
+    1. NodeJS
+        - Install it for free
+        - node -v
+          v20.9.0
+    2. npm version
+        - node package manager
+
+    3. Powerful editor
+        - Visual Studio Code
+        - Subline Text
+        - Intellij
+
+    4. Browser
+        chrome -> development tools -> Recommedation
+        Edge
+        Firefox
+     5. create-react-app
+        starting point of leaning
+        npx create-react-app appname / project name      

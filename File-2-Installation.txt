@@ -1,0 +1,22 @@
+REACR INSTALLATION
+    1. We will learn to install REACT
+    2. We will start with "create-rect-app"
+    3. Prerequisite
+        a. Editor-Visual Studio Code
+        b. Node
+        c. npm
+    4. npm install -g npm
+    5. Run the command "npx create-react-app <project-name>"
+        CRA - Create React App
+
+    6. npm start (cd class1)
+    7. npm
+
+    Bootstrap install in react
+    1. CDN network
+        copy and paste the url into index.html file
+    2. npm install --save bootstrap or npm i bootstrap
+        install is as a dependency package
+        package.json is updated with the latest module as dependency
+        index.js -> import the bootstrap.css/bootstrap.js into the file
+        app.js -> header add the classname 'bg-primary'

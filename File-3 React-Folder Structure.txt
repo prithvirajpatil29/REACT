@@ -1,0 +1,42 @@
+RECTT FOLDER STRUCTURE
+
+    1. Node moules:
+       - These are dependencies for the project
+
+    2. package.json
+       - This is where we can see the dependencies of the project
+
+    3. package-lock.json
+       - This has the setup + dependicies of the project
+
+    4. Readme.md
+       - This file jas the documentation for the project
+
+    5. .gitignore
+       - THIS file ignores the files / folders mentioned in the file
+
+    6. public Directory:
+       - favicon -> Display fevicon in the browser for your application
+         logo.png
+         manifest.json -> to generate settings of the project      
+         index.html -> very important, starting point of your project, single page application
+         robots.txt -> SEO
+         
+    7. SRC Directory :
+       - index.js
+         The entry point of your application.
+         It render the root component(usally app) into the DOM
+       - App.js
+         The main component of your appplication.
+         This is where you defined the overall structure and layout of your app.
+       -Component:
+          This is directory houses reusable UI components that are used throughout the application.
+       - Assets:
+          Here, you can store static assets like image, fonts or other files.
+       - style.css
+           Holds css or other styling files used accross the application
+           This is where you might include global styles or styles specific to certain component
+       - App.test.js
+           This is where you can write test cases for your Apps component using testing frameworks list jest
+       - index.css
+           Global CSS file that gets imported in the entry index.js You can use this to apply global styles or reset.          
