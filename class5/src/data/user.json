@@ -1,0 +1,81 @@
+[
+    {
+    "id": 1,
+    "products": [
+            {
+                "id": 59,
+                "title": "Spring and summershoes",
+                "price": 20,
+                "quantity": 3,
+                "total": 60,
+                "discountPercentage": 8.71,
+                "discountedPrice": 55,
+                "thumbnail": "https://i.dummyjson.com/data/products/59/thumbnail.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "products": [
+            {
+                "id": 54,
+                "title": "TC Reusable Silicone Magic Washing Gloves",
+                "price": 20,
+                "quantity": 3,
+                "total": 60,
+                "discountPercentage": 8.71,
+                "discountedPrice": 55,
+                "thumbnail": "https://i.dummyjson.com/data/products/39/thumbnail.jpg"
+            }
+        ]
+        
+    },
+    {
+        "id": 3,
+        "products": [
+            {
+                "id": 94,
+                "title": "Round Silver Frame Sun Glasses",
+                "price": 20,
+                "quantity": 3,
+                "total": 60,
+                "discountPercentage": 8.71,
+                "discountedPrice": 55,
+                "thumbnail": "https://i.dummyjson.com/data/products/91/thumbnail.jpg"
+            }
+        ]
+        
+    },
+    {
+        "id": 4,
+        "products": [
+            {
+                "id": 4,
+                "title": "Pubg Printed Graphic T-Shirt",
+                "price": 20,
+                "quantity": 3,
+                "total": 60,
+                "discountPercentage": 8.71,
+                "discountedPrice": 55,
+                "thumbnail": "https://i.dummyjson.com/data/products/80/thumbnail.jpg"
+            }
+        ]
+        
+    },
+    {
+        "id": 5,
+        "products": [
+            {
+                "id": 45,
+                "title": "Sneaker shoes",
+                "price": 20,
+                "quantity": 3,
+                "total": 60,
+                "discountPercentage": 8.71,
+                "discountedPrice": 55,
+                "thumbnail": "https://i.dummyjson.com/data/products/68/thumbnail.webp"
+            }
+        ]
+        
+    }
+]
