@@ -4,48 +4,50 @@ import { toast } from 'react-toastify';
 import { logoutUser } from '../data/user';
 
 const Menu = () => {
+
     let loginStatus = localStorage.getItem('loginStatus') || false;
+
     const logoutHandler = async () => {
-        if(window.confirm('Are you sure to logout?')){
-            // await logoutUser();
+        if (window.confirm(`Are you sure to logout?`)) {
             await logoutUser();
-        }else{
-            toast.warning('logout terminated');
+        } else {
+            toast.warning('logout tarminated');
         }
     }
+
   return (
-    <div className='navbar navbar-expand-md navbar-dark bg-secondary'>
+    <div className="navbar navbar-expand-md navbar-dark bg-secondary">
         <div className="container">
             <NavLink to={'/'} className='navbar-brand'>CRUD-APP</NavLink>
-            <button className="navbar-toggler" type='button' data-bs-toggle="collapse" data-bs-target="#menu">
-                <span className='navbar-toggler-icon'></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse justify-content-end" id='menu'>
+
+            <div className="collapse navbar-collapse justify-content-end" id="menu">
                 {
                     loginStatus ? (
                         <Fragment>
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <NavLink to={'/'} className="nav-link">Menu</NavLink>
+                                    <NavLink to={"/"} className="nav-link">Menu</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={'/create'} className="nav-link">Create</NavLink>
+                                    <NavLink to={"/create"} className="nav-link">Create</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink  className="nav-link btn btn-danger" onClick={logoutHandler}>Logout</NavLink>
+                                    <NavLink to={"/"} className="nav-link btn btn-danger" onClick={logoutHandler}>Logout</NavLink>
                                 </li>
                             </ul>
                         </Fragment>
-                    ) :(
+                    ) : (
                         <Fragment>
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <NavLink to={'/login'} className="nav-link">Login</NavLink>
+                                    <NavLink to={"/login"} className="nav-link">Login</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={'/register'} className="nav-link">Register</NavLink>
+                                    <NavLink to={"/register"} className="nav-link">Register</NavLink>
                                 </li>
-                                
                             </ul>
                         </Fragment>
                     )
