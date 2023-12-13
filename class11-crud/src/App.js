@@ -1,28 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import { ToastContainer, toast } from 'react-toastify';
-import Menu from './component/Menu';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './component/Login'
-import Register from './component/Register';
-import Pnf from './component/Pnf';
-import Home from './component/Home';
-import ProtectedRoute from './authGaurd/ProtectedRoute';
-import Create from './component/Create';
+import './App.css';
+import Menu from './components/Menu';
+import Login from './components/Login';
+import Register from './components/Register';
+import Pnf from './components/Pnf';
+import { ToastContainer } from 'react-toastify';
+import Home from './components/Home';
+import ProtectedRouter from './authGuard/ProtectedRouter';
+import Create from './components/Create';
+import Update from './components/Update';
+
 function App() {
   return (
     <BrowserRouter>
-      <Menu></Menu>
-      <ToastContainer autoClose={4000} position={'top-center'}></ToastContainer>
-      <Routes >
-        <Route element={<ProtectedRoute></ProtectedRoute>}>
-          <Route path={'/'} element={<Home></Home>}></Route>
-          <Route path={'/create'} element={<Create></Create>}></Route>
+      <Menu />
+      <ToastContainer autoClose={4000} position={'top-right'}/>
+      <Routes>
+
+        <Route element={<ProtectedRouter />}>
+          <Route path={'/'} element={<Home />}/>
+          <Route path={'/create'} element={<Create />}/>
+          <Route path={'/update/:id'} element={<Update />}/>
         </Route>
-        <Route path={'/'} element={<Home></Home>}></Route>
-        <Route path={'/login'} element={<Login></Login>}></Route>
-        <Route path={'/register'} element={<Register></Register>}></Route>
-        <Route path={'/*'} element={<Pnf></Pnf>}></Route>
+        
+        <Route path={'/login'} element={<Login />}/>
+        <Route path={'/register'} element={<Register/>}/>
+        <Route path={'/*'} element={<Pnf />}/>
       </Routes>
     </BrowserRouter>
   );
