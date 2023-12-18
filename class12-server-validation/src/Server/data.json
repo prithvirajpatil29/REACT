@@ -1,0 +1,35 @@
+{
+  "contacts": [
+    {
+      "name": "React",
+      "email": "react@gmail.com",
+      "image": "https://images.pexels.com/photos/3934192/pexels-photo-3934192.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "mobile": "9900464179",
+      "address": "Bengaluru"
+    },
+    {
+      "id": 5847,
+      "name": "node",
+      "email": "node@gmail.com",
+      "image": "https://images.pexels.com/photos/11937060/pexels-photo-11937060.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "mobile": "9900464179",
+      "address": "gulbarga"
+    },
+    {
+      "id": 8022,
+      "name": "java",
+      "email": "java@gmail.com",
+      "image": "https://images.pexels.com/photos/6212503/pexels-photo-6212503.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "mobile": "9123456789",
+      "address": "mysuru"
+    },
+    {
+      "id": 5969,
+      "name": "java",
+      "email": "java@gmail.com",
+      "image": "https://images.pexels.com/photos/6332551/pexels-photo-6332551.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "mobile": "9900464179",
+      "address": "mysuru"
+    }
+  ]
+}
